@@ -45,6 +45,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* leonardo */
+/* leonardo */
 .navbar-default {
   background-color: transparent;
   border: none;
@@ -52,5 +54,15 @@ table {
 
 .navbar {
   background-color: transparent; }
+
+/* leonardo */
+footer {
+  font-family: "Open Sans", sans-serif;
+  background-color: #2d2d2d;
+  height: 10px;
+  font-size: 12px;
+  color: white; }
+
+/* leonardo */
 
 /*# sourceMappingURL=style.css.map */
