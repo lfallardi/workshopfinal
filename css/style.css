@@ -1,50 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
+/*@import "reset";*/
 /* leonardo */
 /* leonardo */
 .navbar-default {
@@ -55,13 +9,301 @@ table {
 .navbar {
   background-color: transparent; }
 
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px; }
+
+.misc-line:after {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  transform: rotate(45deg);
+  position: relative;
+  top: 5px;
+  margin: auto;
+  border-bottom: 0.5px solid lightgray;
+  border-right: 0.5px solid lightgray; }
+
+.line:before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  position: relative;
+  top: -2px;
+  margin: auto;
+  border-bottom: 0.5px solid lightgray; }
+.line:after {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  position: relative;
+  top: -2px;
+  margin: auto;
+  border-bottom: 0.5px solid lightgray; }
+
+#head-features h1 {
+  margin-top: 10px;
+  margin-top: 70px; }
+  #head-features h1:after {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: white;
+    transform: rotate(45deg);
+    position: relative;
+    top: 20px;
+    margin: auto; }
+
+#features-body {
+  background-image: url(../imgs/04.png);
+  background-size: cover;
+  text-align: left;
+  padding-top: 70px;
+  height: 515px; }
+  #features-body .separacion {
+    margin: 50px 0px; }
+  #features-body h4 {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    margin: 15px 0px; }
+  #features-body p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    padding-right: 20px; }
+  #features-body span {
+    display: inline-block;
+    color: white;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    height: 60px;
+    width: 40px;
+    padding-top: 20px;
+    border-radius: 19px;
+    margin-top: 15px; }
+    #features-body span:hover {
+      background-color: #31aae2;
+      border: 2px solid #31aae2; }
+  #features-body .elemento-feature div {
+    display: inline-block;
+    width: 15%;
+    vertical-align: middle; }
+  #features-body .elemento-feature article {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle; }
+
+#creative-people {
+  background-color: #f9f9f9; }
+  #creative-people h1 {
+    margin-top: 10px;
+    margin-top: 70px; }
+    #creative-people h1:after {
+      content: "";
+      display: block;
+      height: 10px;
+      width: 10px;
+      background: #31aae2;
+      transform: rotate(45deg);
+      position: relative;
+      top: 20px;
+      margin: auto; }
+  #creative-people .row {
+    margin-top: 30px; }
+  #creative-people .imagen {
+    width: 269px;
+    height: 288px;
+    background: #2c333b; }
+  #creative-people .footer_creative_img {
+    background: white;
+    height: 50px;
+    width: 269px;
+    margin-bottom: 100px; }
+    #creative-people .footer_creative_img span {
+      color: grey;
+      display: inline-block;
+      font-size: 16px;
+      margin: 20px 10px 40px 15px; }
+      #creative-people .footer_creative_img span:hover {
+        color: #31aae2; }
+  #creative-people p {
+    display: inline-block;
+    background-color: #31aae2;
+    padding: 5px 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; }
+  #creative-people .lbl-name {
+    margin: -15px -100px;
+    width: 200px;
+    position: absolute; }
+  #creative-people .creative-name {
+    color: white; }
+    #creative-people .creative-name:after, #creative-people .creative-name:before {
+      background-color: #31aae2;
+      content: "";
+      display: inline-block;
+      height: 21px;
+      width: 21px;
+      transform: rotate(45deg);
+      position: relative;
+      margin: -5px -15px; }
+
+#clients {
+  background-image: url(../imgs/back-clientes.png);
+  background-size: cover;
+  height: 296px; }
+  #clients img {
+    display: inline-block;
+    margin-top: 100px;
+    padding: 0px 40px;
+    opacity: 0.5;
+    -webkit-transition: 0.5s;
+    transition: 1xs; }
+    #clients img:hover {
+      opacity: 1.0;
+      -webkit-transition: 1s;
+      transition: 0.5s; }
+
+#customers h1 {
+  margin-top: 10px;
+  margin-top: 70px; }
+  #customers h1:after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    background: #31aae2;
+    transform: rotate(45deg);
+    position: relative;
+    top: 20px;
+    margin: auto; }
+#customers .panel {
+  background: #f9f9f9;
+  height: 40px;
+  border-radius: 0px; }
+#customers .panel-body {
+  padding: 10px 10px 5px 10px; }
+#customers p {
+  display: inline-block; }
+#customers .ranking-star {
+  display: inline-block;
+  float: right; }
+  #customers .ranking-star span {
+    margin-top: -10px;
+    color: #dbdbdb; }
+  #customers .ranking-star .select {
+    color: gold; }
+
+#connect {
+  margin-bottom: 80px; }
+  #connect h1 {
+    margin-top: 10px;
+    margin-top: 70px; }
+    #connect h1:after {
+      content: "";
+      display: block;
+      height: 10px;
+      width: 10px;
+      background: #31aae2;
+      transform: rotate(45deg);
+      position: relative;
+      top: 20px;
+      margin: auto; }
+  #connect .facebook-bac {
+    background: #1b57a1; }
+  #connect .twitter-bac {
+    background: #0cbce2; }
+  #connect .insta-bac {
+    background: #a9c511; }
+  #connect .youtube-bac {
+    background: #e21b1b; }
+  #connect .socialmedia {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    color: white;
+    padding-top: 15px; }
+  #connect .row {
+    margin-top: 40px; }
+    #connect .row .texto-social {
+      font-family: "Open Sans", sans-serif; }
+      #connect .row .texto-social h2 {
+        font-size: 14px;
+        font-weight: 700; }
+      #connect .row .texto-social p {
+        font-size: 12px;
+        margin-top: 10px; }
+
+#wordpress_theme {
+  background-color: #f9f9f9;
+  padding-top: 60px; }
+  #wordpress_theme h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  #wordpress_theme p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-right: 30px; }
+
+/* leonardo */
 /* leonardo */
 footer {
   font-family: "Open Sans", sans-serif;
   background-color: #2d2d2d;
-  height: 10px;
+  height: 50px;
   font-size: 12px;
   color: white; }
+  footer .navbar-brand a {
+    font-weight: bold; }
+    footer .navbar-brand a:hover {
+      color: white; }
+
+#sec_footer {
+  background-color: #313131;
+  height: 300px; }
+  #sec_footer h1 {
+    margin-top: 50px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; }
+  #sec_footer .logo-footer {
+    margin-top: 50px;
+    padding-bottom: 20px; }
+  #sec_footer a {
+    border: 1px solid #747373;
+    border-radius: 19px;
+    padding: 10px 20px;
+    color: #747373;
+    text-decoration: none; }
+    #sec_footer a:hover {
+      background-color: #31AAE2;
+      border: none;
+      color: white;
+      font-weight: bold;
+      text-decoration: none; }
+  #sec_footer p {
+    color: #747373;
+    padding: 10px;
+    font-size: 14px; }
+  #sec_footer span {
+    background-color: #4A4A4A;
+    border-radius: 100%;
+    color: #6b6b6b;
+    display: inline-block;
+    font-size: 25px;
+    height: 50px;
+    margin: 0px 10px;
+    padding: 10px;
+    width: 50px; }
+    #sec_footer span:hover {
+      background-color: #31AAE2;
+      color: white; }
 
 /* leonardo */
 

@@ -1,0 +1,279 @@
+// leonardo
+
+h1{
+	font-family: $fuente-principal;
+	font-size: 24px;
+}
+
+@mixin misc($content, $backcolor, $width: 1px, $height: 1px, $top: 20px){
+	margin-top: 10px;
+	&:after{
+		content: $content;
+		display: block;
+		height: $height;
+		width: $width;
+		background: $backcolor;
+		transform: rotate(45deg);
+		position: relative;
+		top: $top;
+		margin: auto;
+	}	
+}
+
+.misc-line{
+	&:after{
+		content: "";
+		display: inline-block;
+		height: 15px;
+		width: 15px;
+		transform: rotate(45deg);
+		position: relative;
+		top: 5px;
+		margin: auto;
+		border-bottom: 0.5px solid lightgray;
+		border-right: 0.5px solid lightgray;
+	}
+}
+.line{
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 60px;
+		position: relative;
+		top: -2px;
+		margin: auto;
+		border-bottom: 0.5px solid lightgray;
+	}
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 60px;
+		position: relative;
+		top: -2px;
+		margin: auto;
+		border-bottom: 0.5px solid lightgray;
+	}
+}
+
+@mixin 	ico-features{
+			display: inline-block;
+			color: white;
+			background: rgba(255, 255, 255, 0.5);
+			border: 2px solid white;
+		    height: 60px;
+		    width: 40px;
+		    padding-top: 20px;
+		    border-radius: 19px;
+		    margin-top: 15px;
+		}
+
+#head-features{
+	h1{
+		@include misc("", white, 20px, 20px, 20px);
+		margin-top: 70px;
+	}
+}
+#features-body{
+	background-image: url(../imgs/04.png);
+	background-size: cover;
+	text-align: left;
+	padding-top: 70px;
+	.separacion{
+		margin: 50px 0px;
+	}
+	h4{ 
+		color: white;
+		font-family: $fuente-principal;
+		margin: 15px 0px;
+	}
+	p{ 
+		color:white;
+		font-family: $fuente-principal;
+		font-size: 12px;
+		line-height: 14px;
+		padding-right: 20px;
+	}
+	span{ 
+		@include ico-features;
+		&:hover{
+			background-color: $backcolor-hover;
+			border: 2px solid $backcolor-hover;
+		}
+	}
+	height: 515px;
+	.elemento-feature{
+		div{
+			display: inline-block;
+			width: 15%;
+			vertical-align: middle;
+		}
+		article{
+			display: inline-block;
+			width: 80%;
+			vertical-align: middle;
+		}
+	}
+}
+
+#creative-people{
+	h1{ 
+		@include misc("", $backcolor-hover, 10px, 10px, 20px);	
+		margin-top: 70px;
+	}	
+	background-color: #f9f9f9;
+	.row{
+		margin-top: 30px;
+	}
+	.imagen{
+		width: 269px;
+		height: 288px;
+		background: #2c333b;
+	}
+	.footer_creative_img{
+		background: white;
+		height: 50px;
+		width: 269px;
+		margin-bottom: 100px;
+		span{
+    		color: grey;
+    		display: inline-block;
+    		font-size: 16px;
+		    margin: 20px 10px 40px 15px;
+			&:hover{
+				color: $backcolor-hover;;
+			}
+		}
+	}
+	p{
+		display: inline-block;
+		background-color: $backcolor-hover;
+		padding: 5px 15px;
+		font-family: $fuente-principal;
+		font-size: 14px;
+	}
+	.lbl-name{
+		margin: -15px -100px;
+		width: 200px;
+		position: absolute;
+	}
+	.creative-name{
+		color: white;
+		&:after, &:before{
+			background-color: $backcolor-hover;
+			content: "";
+			display: inline-block;
+			height: 21px;
+			width: 21px;
+			transform: rotate(45deg);
+			position: relative;
+		    margin: -5px -15px;
+	}
+
+	}
+}
+
+#clients{
+	background-image: url(../imgs/back-clientes.png);
+	background-size: cover;
+	height: 296px;
+	img{
+		display: inline-block;
+		margin-top: 100px;
+		padding: 0px 40px;
+		opacity: 0.5;
+		-webkit-transition: 0.5s;
+		transition: 1xs;
+		&:hover{
+			opacity: 1.0;	
+			-webkit-transition: 1s;
+			transition: 0.5s;
+		}
+	}
+}
+
+#customers{
+	h1{ 
+		@include misc("", $backcolor-hover, 10px, 10px, 20px);	
+		margin-top: 70px;
+	}
+	.panel{
+		background: #f9f9f9;
+		height: 40px;
+		border-radius: 0px;
+	}
+	.panel-body{
+		padding: 10px 10px 5px 10px;
+	}
+	p{
+		display: inline-block;
+	}
+	.ranking-star{
+		display: inline-block;	
+		float: right;
+		span{
+			margin-top: -10px;
+			color: #dbdbdb;
+		}	
+		.select{
+			color: gold;
+		}
+	}
+}
+
+#connect{
+	h1{
+		@include misc("", $backcolor-hover, 10px, 10px, 20px);
+		margin-top: 70px;
+	}
+	margin-bottom: 80px;
+	.facebook-bac{
+		background: #1b57a1;
+	}
+	.twitter-bac{
+		background: #0cbce2;	
+	}
+	.insta-bac{
+		background: #a9c511;	
+	}
+	.youtube-bac{
+		background: #e21b1b;	
+	}
+	.socialmedia{
+		display: inline-block;
+		height: 60px;
+		width: 60px;
+		font-size: 30px;
+		color: white;
+		padding-top: 15px;
+	}
+	.row{
+		margin-top: 40px;
+		.texto-social{
+			font-family: $fuente-principal;
+			h2{
+				font-size: 14px;
+				font-weight: 700;
+			}
+			p{
+				font-size: 12px;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+#wordpress_theme{
+	background-color: #f9f9f9;
+	padding-top: 60px;
+	h1{
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	p{
+		font-family: $fuente-principal;
+		font-size: 12px;
+		margin-bottom: 20px;
+		padding-right: 30px;
+	}
+}
