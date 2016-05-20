@@ -1,0 +1,181 @@
+@import "variables";
+@import "header";
+@import "footer";
+
+
+@mixin parrafo($size, $color){
+	font-size: $size;
+	font-family: $fuente-principal;
+	color: $color;
+
+}
+
+body{
+	background: #F9F9F9;
+}
+
+h1{
+	font-family: $fuente-principal;
+	font-size: 18px;
+	padding: 0px 20px;
+}
+
+p{
+	@include parrafo(14px, grey);
+	padding: 0px 20px;
+}
+
+.media{
+	margin-left: 20px;
+}
+
+.post{
+	background: white;
+}
+
+
+.breadcrumb-read {
+    padding: 8px 0px;
+	margin-left: 20px;    
+    margin-bottom: 20px;
+    list-style: none;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: $fuente-principal;
+}
+
+.imagen{
+	height: 368px;
+	background: black;
+}
+
+.galeria_post_izq{
+	img{
+		height: 170px;
+		width: 170px;
+		background: black;
+		margin: 40px 20px;
+		&:hover{
+			background: $backcolor-hover;
+		}
+	}
+
+}
+
+
+.cita{
+	@include parrafo(16px, black);
+	padding: 0px;
+}
+
+.panel-body{
+	padding-bottom: 5px;
+}
+
+.posted_by{
+	margin: 0px 25px 20px 25px;
+    background-color: #F9F9F9;
+    border-radius: 0px;
+    border: none;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    span{
+    	display: inline-block;
+    	vertical-align: middle;
+    	color: white;
+    	height: 30px;
+    	width: 30px;
+    	background: #dadada;
+    	font-size: 20px;
+    	padding: 0px 6px;
+    }
+    h5{
+    	@include parrafo(12px, #dadada);
+    	display: inline-block;
+    	text-transform: uppercase;
+    }
+    p{
+    	@include parrafo(12px, $backcolor-hover);
+    	display: inline-block;
+    	text-transform: uppercase;
+    	padding: 0px;
+    }
+ 	.opciones_post{
+ 		float: right;
+ 		ul{
+ 			li{
+ 				display: inline-block;
+ 				@include parrafo(14px, white);
+ 				background-color: #dadada;
+ 				padding: 5px 10px;
+ 				&:hover{
+ 					background-color: $backcolor-hover;
+ 				}
+ 				a{
+ 					text-decoration: none;
+ 					color: white;
+ 				}
+ 			}
+ 		}
+ 	}   
+}
+
+#comments{
+	h1{padding: 0px;}
+	.comments{
+		border-radius: 0px;
+	    border: none;
+	    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	    span{
+	    	display: inline-block;
+	    	vertical-align: middle;
+	    	width: 70px;
+	    	height: 70px;
+	    	border-radius: 70px;
+	    	background: #dadada;
+	    }
+	    .comentario{
+	    	display: inline-block;
+	    	vertical-align: middle;
+	    	width: 80%;
+	    	padding: 0px 10px;
+	    	.quien{
+		    	h5{
+		    		@include parrafo(14px, $backcolor-hover);
+		    		font-weight: bold;
+		    		display: inline-block;
+		    	}
+		    	p{
+		    		@include parrafo(12px, #dadada);
+		    		display: inline-block;
+		    		padding: 0px 10px;
+		    	}
+	    	}
+	    	p{
+	    		@include parrafo(12px, black);
+	    		display: inline-block;
+	    		padding: 0px;
+	    	}
+	    }
+	    .opciones_post_btn{
+	    	display: inline-block;
+	    	vertical-align: top;
+	    	font-family: $fuente-principal;
+	    	border: 2px solid #dadada;
+	    	padding: 5px 10px;
+	    	a{
+	    		text-decoration: none;
+	    		color: #dadada;
+	    		&:hover{
+	    			text-decoration: none;
+	    			color: white;
+	    		}
+	    	}
+	    	&:hover{
+	    		color: white;
+	    		background-color: #dadada;
+	    		border: none;
+	    	}
+	    }
+	}
+}
