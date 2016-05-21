@@ -62,6 +62,9 @@ footer {
       color: white; }
 
 /* leonardo */
+textarea {
+  resize: none; }
+
 body {
   background: #F9F9F9; }
 
@@ -157,7 +160,8 @@ p {
         color: white; }
 
 #comments h1 {
-  padding: 0px; }
+  padding: 0px;
+  margin: 50px 0px 20px 0px; }
 #comments .comments {
   border-radius: 0px;
   border: none;
@@ -208,5 +212,222 @@ p {
       color: white;
       background-color: #dadada;
       border: none; }
+      #comments .comments .opciones_post_btn:hover a {
+        color: white; }
+
+#form_post h1 {
+  padding: 0px;
+  margin: 50px 0px 20px 0px; }
+#form_post .formulario-post {
+  border-radius: 0px;
+  border: 1px solid #dadada; }
+#form_post .nombre_form {
+  padding-left: 0px;
+  padding-right: 15px; }
+#form_post .web_form {
+  padding-left: 15px;
+  padding-right: 0px; }
+#form_post textarea {
+  height: 200px;
+  margin: 25px 0px;
+  width: 100%; }
+#form_post button {
+  background: #31aae2;
+  margin: 25px 0px 100px 0px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  padding: 15px 0px;
+  font-weight: bold; }
+
+#column-der h4 {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase; }
+#column-der .contadores {
+  padding: 3px 4px;
+  font-size: 12px;
+  line-height: 1;
+  color: #31aae2;
+  background-color: transparent;
+  border-radius: 6px;
+  border-top: none;
+  border-bottom: none;
+  border-left: 3px solid #31aae2;
+  border-right: 3px solid #31aae2;
+  margin-left: 10px; }
+#column-der .categorias ul li {
+  font-family: "Open Sans", sans-serif;
+  padding: 5px; }
+  #column-der .categorias ul li:hover {
+    color: #31aae2; }
+  #column-der .categorias ul li a {
+    color: black; }
+    #column-der .categorias ul li a:hover {
+      color: black;
+      text-decoration: none; }
+#column-der #social {
+  margin-top: 30px; }
+  #column-der #social h4 {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  #column-der #social i {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    margin-left: 10px; }
+  #column-der #social .rss {
+    background-color: #ffa801;
+    height: 28px;
+    width: 130px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    color: white; }
+  #column-der #social .fb {
+    background-color: #3b59a1;
+    height: 28px;
+    width: 130px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    color: white; }
+  #column-der #social .dribbble {
+    background-color: #ea367e;
+    height: 28px;
+    width: 130px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    color: white; }
+  #column-der #social .tw {
+    background-color: #31aae2;
+    height: 28px;
+    width: 130px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    color: white; }
+  #column-der #social .pint {
+    background-color: #6c9e32;
+    height: 28px;
+    width: 130px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    color: white; }
+  #column-der #social .plus {
+    background-color: #dd4c39;
+    height: 28px;
+    width: 130px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    color: white; }
+#column-der #galeria-der {
+  margin-top: 30px; }
+  #column-der #galeria-der .titulo-seccion {
+    display: inline-block;
+    vertical-align: middle; }
+  #column-der #galeria-der .recent-work {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #column-der #galeria-der .botones-work {
+    vertical-align: middle;
+    display: inline-block;
+    float: right; }
+    #column-der #galeria-der .botones-work span {
+      height: 30px;
+      width: 30px;
+      color: white;
+      background: #dadada;
+      padding: 8px 10px; }
+      #column-der #galeria-der .botones-work span:hover {
+        background-color: #31aae2; }
+  #column-der #galeria-der .img-der {
+    width: 80px;
+    height: 80px;
+    background-color: #4a4a4a;
+    margin: 2px 2px; }
+#column-der #recent-post {
+  margin-top: 30px; }
+  #column-der #recent-post h4 {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  #column-der #recent-post .reciente {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #DDD;
+    border-radius: 0px;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 0px; }
+    #column-der #recent-post .reciente .panel-body {
+      padding: 10px 0px; }
+  #column-der #recent-post .usuario {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #4a4a4a;
+    vertical-align: middle; }
+  #column-der #recent-post .comentario-der {
+    width: 79%;
+    display: inline-block;
+    vertical-align: middle; }
+    #column-der #recent-post .comentario-der p {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      color: #d2d2d2;
+      padding: 0px;
+      margin-left: 10px;
+      margin-bottom: 0px; }
+    #column-der #recent-post .comentario-der span {
+      font-size: 10px;
+      font-family: "Open Sans", sans-serif;
+      color: #31aae2;
+      margin-left: 10px;
+      display: inline-block; }
+#column-der #quick-contact {
+  margin-top: 30px; }
+  #column-der #quick-contact h4 {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  #column-der #quick-contact .elemento_form {
+    border-radius: 0px;
+    border: 1px solid #DADADA;
+    margin: 10px 0px; }
+  #column-der #quick-contact .btn-default {
+    background-color: #31aae2;
+    border: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase; }
+#column-der #popular-tags {
+  margin-top: 30px; }
+  #column-der #popular-tags h4 {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    text-transform: uppercase; }
+  #column-der #popular-tags span {
+    background: #DADADA;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 3px 3px; }
+    #column-der #popular-tags span a {
+      color: white;
+      text-decoration: none; }
+      #column-der #popular-tags span a:hover {
+        color: white;
+        text-decoration: none; }
+    #column-der #popular-tags span:hover {
+      background: #31aae2; }
 
 /*# sourceMappingURL=blog_read.css.map */
