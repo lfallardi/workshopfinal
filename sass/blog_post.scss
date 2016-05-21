@@ -10,6 +10,20 @@
 
 }
 
+@mixin btn-post-read{
+	@include parrafo(12px, white);
+	margin-left: 20px;
+	background: #dadada;
+	text-transform: uppercase;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	&:hover{
+		background: $backcolor-hover;
+		color: white;
+		text-decoration: none;
+	}	
+}
+
 textarea{
 	resize: none;
 }
@@ -38,7 +52,6 @@ p{
 	background: white;
 }
 
-
 .breadcrumb-read {
     padding: 8px 0px;
 	margin-left: 20px;    
@@ -55,171 +68,75 @@ p{
 	background: black;
 }
 
-.galeria_post_izq{
-	img{
-		height: 170px;
-		width: 170px;
-		background: black;
-		margin: 40px 20px;
-		&:hover{
-			background: $backcolor-hover;
+
+#amazing{
+	margin-bottom: 50px;
+	a{@include btn-post-read;}
+}
+
+#creative{
+	margin-bottom: 50px;
+	a{@include btn-post-read;}
+}
+
+#creative-carrousel1{
+	margin-bottom: 50px;
+	a{@include btn-post-read;}
+	.active{
+		background: $backcolor-hover;
+	}
+}
+
+#creative-carrousel2{
+	margin-bottom: 50px;
+	#carousel-left, #carousel-right{
+		a{
+			display: inline-block;
+			background: transparent;
+			span{
+				border: 1px solid grey;
+				height: 60px;
+				width: 60px;
+				border-radius: 60px;
+				padding-top: 10px;
+				vertical-align: middle;
+				&:hover{
+					background: $backcolor-hover;
+					color: white;
+				}
+			}
+		}
+	}
+	a{@include btn-post-read;}
+}
+
+#cita{
+	margin-bottom: 30px;
+	.media{
+		padding: 20px 0px;
+	}
+	.cita{
+		@include parrafo(16px, black);
+		padding: 0px 30px;
+	}
+	.media-footer{
+		p{
+			margin-left: 50px;
+			color: $backcolor-hover;
+			&:before{
+				content: "";
+				display: inline-block;
+				height: 2px;
+				width: 15px;
+				background: $backcolor-hover;
+				position: relative;
+			    top: -3px;
+    			margin: auto;
+    			margin-right: 5px;
+			}
 		}
 	}
 
-}
-
-
-.cita{
-	@include parrafo(16px, black);
-	padding: 0px;
-}
-
-.panel-body{
-	padding-bottom: 5px;
-}
-
-.posted_by{
-	margin: 0px 25px 20px 25px;
-    background-color: #F9F9F9;
-    border-radius: 0px;
-    border: none;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    span{
-    	display: inline-block;
-    	vertical-align: middle;
-    	color: white;
-    	height: 30px;
-    	width: 30px;
-    	background: #dadada;
-    	font-size: 20px;
-    	padding: 0px 6px;
-    }
-    h5{
-    	@include parrafo(12px, #dadada);
-    	display: inline-block;
-    	text-transform: uppercase;
-    }
-    p{
-    	@include parrafo(12px, $backcolor-hover);
-    	display: inline-block;
-    	text-transform: uppercase;
-    	padding: 0px;
-    }
- 	.opciones_post{
- 		float: right;
- 		ul{
- 			li{
- 				display: inline-block;
- 				@include parrafo(14px, white);
- 				background-color: #dadada;
- 				padding: 5px 10px;
- 				&:hover{
- 					background-color: $backcolor-hover;
- 				}
- 				a{
- 					text-decoration: none;
- 					color: white;
- 				}
- 			}
- 		}
- 	}   
-}
-
-#comments{
-	h1{
-		padding: 0px;
-		margin: 50px 0px 20px 0px;
-	}
-	.comments{
-		border-radius: 0px;
-	    border: none;
-	    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-	    span{
-	    	display: inline-block;
-	    	vertical-align: middle;
-	    	width: 70px;
-	    	height: 70px;
-	    	border-radius: 70px;
-	    	background: #dadada;
-	    }
-	    .comentario{
-	    	display: inline-block;
-	    	vertical-align: middle;
-	    	width: 80%;
-	    	padding: 0px 10px;
-	    	.quien{
-		    	h5{
-		    		@include parrafo(14px, $backcolor-hover);
-		    		font-weight: bold;
-		    		display: inline-block;
-		    	}
-		    	p{
-		    		@include parrafo(12px, #dadada);
-		    		display: inline-block;
-		    		padding: 0px 10px;
-		    	}
-	    	}
-	    	p{
-	    		@include parrafo(12px, black);
-	    		display: inline-block;
-	    		padding: 0px;
-	    	}
-	    }
-	    .opciones_post_btn{
-	    	display: inline-block;
-	    	vertical-align: top;
-	    	font-family: $fuente-principal;
-	    	border: 2px solid #dadada;
-	    	padding: 5px 10px;
-	    	a{
-	    		text-decoration: none;
-	    		color: #dadada;
-	    		&:hover{
-	    			text-decoration: none;
-	    			color: white;
-	    		}
-	    	}
-	    	&:hover{
-	    		a{
-	    			color: white;
-	    		}
-	    		color: white;
-	    		background-color: #dadada;
-	    		border: none;
-	    	}
-	    }
-	}
-}
-
-#form_post{
-	h1{
-		padding: 0px;
-		margin: 50px 0px 20px 0px;
-	}
-	.formulario-post{
-		border-radius: 0px;
-		border: 1px solid #dadada;
-	}
-	.nombre_form{
-		padding-left: 0px;
-		padding-right: 15px;
-	}
-	.web_form{
-		padding-left: 15px;
-		padding-right: 0px;
-	}
-	textarea{
-		height: 200px;
-		margin: 25px 0px;
-		width: 100%;
-	}
-	button{
-		background: $backcolor-hover;
-		margin: 25px 0px 100px 0px;
-		@include parrafo(14px, white);
-		padding: 15px 0px;
-		font-weight: bold;
-	}
 }
 
 #pag{
