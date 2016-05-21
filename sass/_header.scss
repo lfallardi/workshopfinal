@@ -1,3 +1,22 @@
+@import "variables";
+
+header{
+	background-color: #eee;
+	nav{
+		ul{
+			li{
+				a{
+					height: 41px;
+					padding: 0px;
+					&:hover{
+						border: 2px solid black;
+					}
+				}
+			}
+		}
+	}	
+}
+
 .navbar-default{
 	background-color: transparent;
 	border: none;
@@ -6,4 +25,17 @@
 
 .navbar{
 	background-color: transparent;
+	padding: 15px 0px;
+}
+
+.navbar-brand{
+	padding: 5px 0px;
+}
+
+
+#titulo-seccion{
+	.jumbotron{
+		font-family: $fuente-principal;
+	}
+	margin-bottom: 100px;
 }

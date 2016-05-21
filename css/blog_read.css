@@ -1,12 +1,31 @@
 /* leonardo */
 /* leonardo */
+/* leonardo */
+/* leonardo */
+header {
+  background-color: #eee; }
+  header nav ul li a {
+    height: 41px;
+    padding: 0px; }
+    header nav ul li a:hover {
+      border: 2px solid black; }
+
 .navbar-default {
   background-color: transparent;
   border: none;
   font-family: "Open Sans", sans-serif; }
 
 .navbar {
-  background-color: transparent; }
+  background-color: transparent;
+  padding: 15px 0px; }
+
+.navbar-brand {
+  padding: 5px 0px; }
+
+#titulo-seccion {
+  margin-bottom: 100px; }
+  #titulo-seccion .jumbotron {
+    font-family: "Open Sans", sans-serif; }
 
 /* leonardo */
 footer {
