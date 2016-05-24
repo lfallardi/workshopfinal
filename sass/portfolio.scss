@@ -37,23 +37,11 @@
 }
 
 article{
-	color: black;
-	font-size: 30px;
-	text-align: center;
 	&:hover{
 		background: $backcolor-hover;
-		color: white;
-	}
-	i{
-		color: white;
-		display: inline-block;
-		vertical-align: middle;
 	}
 }
 
-.icon-galery{
-	margin-top: 30px;
-}
 
 #titulo{
 	margin-top: 30px;
